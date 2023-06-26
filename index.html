@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-us">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<head>
+    <meta charset="UTF-8">
+    <title>Compress Image</title>
+
+    <link rel="shortcut icon" type="image/png" href="./css/icon.png"/>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <style>
+        img {
+            width: 100%;
+            max-width: 320px;
+            padding: 10px 15px;
+        }
+
+        .tip {
+            position: relative;
+            top: 15px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="./" class="navbar-brand">Compressor</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label class="control-label">Upload File</label>
+            <div class="preview-zone hidden">
+              <div class="box box-solid">
+                <div class="box-header with-border">
+                  <div><b>Preview</b></div>
+                  <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-danger btn-xs remove-preview">
+                      <i class="fa fa-times"></i> Reset This Form
+                    </button>
+                  </div>
+                </div>
+                <div class="box-body"></div>
+              </div>
+            </div>
+            <div class="dropzone-wrapper">
+              <div class="dropzone-desc">
+                <i class="glyphicon glyphicon-download-alt"></i>
+                <p>Choose an image file or drag it here.</p>
+              </div>
+              <input type="file" name="img_logo" class="dropzone" id="fileInpt" multiple>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="row">
+        <div class="col-md-2 ">
+          <div class="input-group">
+		 <span class="input-group-addon">Custum Width:</span>
+		 <input type="text" class="form-control" placeholder="800" id="cCval" value="800">
+        </div>
+		
+        </div>
+		<div class="col-md-2 ">
+          <div class="checkbox">
+  <label><input type="checkbox" value="" id="useCval">use Custum Width</label>
+</div>
+        </div>
+</div>
+
+  
+    </div>
+ 
+</section>
+
+</div>
+<div class="container">
+
+<div class="row" id="results">
+
+</div>
+</div>
+<div class="row hide" id="btnsCont">
+<div class="col-xs-6 text-center">
+            <button class="btn btn-success " id="dlAll">Download all</button>
+</div>
+<div class="col-xs-6 text-center">
+            <button class="btn btn-warning" id="clear">Clear all</button>
+</div>
+</div>
+
+
+
+
+<footer class="text-center">
+    <hr/>
+    <p class="text-muted">
+	<a href="https://github.com/think2011/localResizeIMG">
+        localResizeIMG(<span id="version"></span>o1
+		</a>
+    </p>
+</footer>
+
+
+<script src="./js/lrz.bundle.js"></script>
+<script src="./js/jszip.min.js"></script>
+<script src="./js/FileSaver.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
