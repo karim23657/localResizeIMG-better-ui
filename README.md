@@ -11,4 +11,4 @@ more ui functions for https://github.com/think2011/localResizeIMG
 - Bulk aspect ratio resize image to custom width
 - Bulk clear compretion results
 
-![Screenshot 2023-06-26 at 20-36-29 Compress Image](https://github.com/karim23657/localResizeIMG-better-ui/assets/64953489/7125838f-0d25-47e0-a2cf-683f3bf4951b)
+![Screenshot 2023-06-26 at 20-39-14 Compress Image](https://github.com/karim23657/localResizeIMG-better-ui/assets/64953489/b75fa539-9b18-48ce-bc7a-d83235edf2df)
