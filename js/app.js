@@ -42,7 +42,7 @@ document.querySelector("#dlAll").addEventListener("click",(e)=>{
 
 document.querySelector("#fileInpt").addEventListener("change",(e)=>{
   // console.log(e)
-  compressor(this.files);
+  compressor(document.querySelector("#fileInpt").files);
 })
 
 
